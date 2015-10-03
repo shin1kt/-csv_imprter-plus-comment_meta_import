@@ -568,7 +568,7 @@ class CSVImporterPlugin {
             if (isset($data["csv_comment_{$cid}_date"])) {
                 $new_comment['comment_date'] = $this->parse_date(
                     $data["csv_comment_{$cid}_date"]);
-        c    }
+            }
 
             $id = wp_insert_comment($new_comment);
             if ($id) {

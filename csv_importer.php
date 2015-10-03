@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: CSV Importer
+Plugin Name: CSV Importer add comment meta import
 Description: wordpress plugin csv-importer(https://wordpress.org/plugins/csv-importer/) add a comment meta import.
 Version: 0.1
 Author: shin1kt

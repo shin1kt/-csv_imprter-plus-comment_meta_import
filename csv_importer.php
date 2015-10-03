@@ -516,9 +516,9 @@ class CSVImporterPlugin {
         // First get a list of the comments for this post
         $comments = array();
 
-        //start add code----------------------
+        /* start add code */
         $comments_meta=array();
-        //for far add code -------------------
+        /* for far add code */
 
         foreach ($data as $k => $v) {
             // comments start with cvs_comment_
@@ -526,12 +526,12 @@ class CSVImporterPlugin {
                     $v != '') {
                 $comments[$matches[1]] = 1;
 
-                //start add code----------------------
+                /* start add code */
                 // commentmeta key
                 if(preg_match('/^csv_comment_[^_]+_meta_(.*)/', $k, $matches_meta)) {
                 	$comments_meta[$matches[1]][]=$matches_meta[1];
                 }
-                //for far add code -------------------
+                /* for far add code */
 
             }
         }
@@ -574,7 +574,7 @@ class CSVImporterPlugin {
             if ($id) {
                 $count++;
 
-                //start add code----------------------
+                /* start add code */
                 //comment_meta insert
                 if($comments_meta[$cid]){
                     foreach($comments_meta[$cid] AS $meta_key){
@@ -586,7 +586,7 @@ class CSVImporterPlugin {
                         }
                     }
                 }
-                //for far add code -------------------
+                /* for far add code */
 
             } else {
                 $this->log['error'][] = "Could not add comment $cid";
